@@ -4,7 +4,7 @@ from aiohttp import ClientError, ClientTimeout
 from random import randint
 
 class Client:
-    def __init__(self, api_key_fixer: str, cache_ttl: int = 3000, timeout: int = 10):
+    def __init__(self, api_key_fixer: str, cache_ttl: int = 30, timeout: int = 10):
         self.api_key_fixer = api_key_fixer
         self.base_url = "http://data.fixer.io/api"
         self.timeout = timeout  # Таймаут запроса в секундах
